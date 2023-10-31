@@ -53,3 +53,16 @@ StartupEvents.registry('item', event => {
       .tag(`mekanism:crystals/${mat}`)
   }
 })
+
+StartupEvents.registry('mekanism:slurry', event => {
+  for (const mat of global.mek_processing_ingots) {
+    event
+      .create(`dirty_${mat}`)
+      .texture('mekanism:slurry/dirty')
+      .color(mek_processing_properties[mat].color)
+    event
+      .create(`clean_${mat}`)
+      .texture('mekanism:slurry/clean')
+      .color(mek_processing_properties[mat].color)
+  }
+})
