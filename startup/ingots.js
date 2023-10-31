@@ -1,3 +1,4 @@
+//Makes Ingots for Immersive Engineering, Mekanism, Create, and Thermal.
 const ingot_properties = {
   tin: { color: tin },
   silver: { color: silver },
@@ -48,23 +49,5 @@ StartupEvents.registry('item', event => {
       .tag('forge:ingots')
       .tag(`forge:ingots/${mat}`)
       .tag('minecraft:breacon_payment_items')
-    event
-      .create(`${mat}_plate`)
-      .texture('layer0', 'kubejs:item/plate')
-      .color(0, ingot_properties[mat].color)
-      .tag('forge:plates')
-      .tag(`forge:plates/${mat}`)
-    event
-      .create(`${mat}_dust`)
-      .texture('layer0', 'kubejs:item/dust')
-      .color(0, ingot_properties[mat].color)
-      .tag('forge:dusts')
-      .tag(`forge:dusts/${mat}`)
-    event
-      .create(`${mat}_rod`)
-      .texture('layer0', 'kubejs:item/rod')
-      .color(0, ingot_properties[mat].color)
-      .tag('forge:rods')
-      .tag(`forge:rods/${mat}`)
   }
 })
