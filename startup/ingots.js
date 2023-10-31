@@ -1,3 +1,4 @@
+//Makes Ingots for Immersive Engineering, Mekanism, Create, and Thermal. Also makes Plates for every Ingot.
 const ingot_properties = {
   tin: { color: tin },
   silver: { color: silver },
@@ -15,8 +16,6 @@ const ingot_properties = {
   lumium: { color: lumium },
   invar: { color: invar },
   signalum: { color: signalum },
-  tungsten: { color: tungsten },
-  signar: { color: signar }
 }
 
 global.ingots = [
@@ -36,8 +35,6 @@ global.ingots = [
   'lumium',
   'invar',
   'signalum',
-  'tungsten',
-  'signar'
 ]
 
 StartupEvents.registry('item', event => {
