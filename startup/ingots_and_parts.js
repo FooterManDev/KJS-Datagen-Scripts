@@ -1,4 +1,3 @@
-//Makes Ingots for Immersive Engineering, Mekanism, Create, and Thermal. Also makes Plates for every Ingot.
 const ingot_properties = {
   tin: { color: tin },
   silver: { color: silver },
@@ -10,12 +9,14 @@ const ingot_properties = {
   constantan: { color: constantan },
   osmium: { color: osmium },
   bronze: { color: bronze },
+  uranium: {color: uranium },
   zinc: { color: zinc },
   brass: { color: brass },
   enderium: { color: enderium },
   lumium: { color: lumium },
   invar: { color: invar },
   signalum: { color: signalum },
+  uranium: { color: tungsten }
 }
 
 global.ingots = [
@@ -35,6 +36,7 @@ global.ingots = [
   'lumium',
   'invar',
   'signalum',
+  'uranium'
 ]
 
 StartupEvents.registry('item', event => {
@@ -52,5 +54,17 @@ StartupEvents.registry('item', event => {
       .color(0, ingot_properties[mat].color)
       .tag('forge:plates')
       .tag(`forge:plates/${mat}`)
+    event
+      .create(`${mat}_dust`)
+      .texture('layer0', 'kubejs:item/dust')
+      .color(0, ingot_properties[mat].color)
+      .tag('forge:dusts')
+      .tag(`forge:dusts/${mat}`)
+    event
+      .create(`${mat}_rod`)
+      .texture('layer0', 'kubejs:item/rod')
+      .color(0, ingot_properties[mat].color)
+      .tag('forge:rods')
+      .tag(`forge:rods/${mat}`)
   }
 })
