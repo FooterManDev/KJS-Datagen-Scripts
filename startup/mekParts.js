@@ -1,4 +1,4 @@
-//Makes Dirty Dust, Clumps, Shards and Crystals for all materials that come from Ore.
+//Makes Dirty Dust, Clumps, Shards, Crystals and Slurries for all materials that come from Ore.
 const mek_processing_properties = {
   copper: { color: copper },
   iron: { color: iron },
