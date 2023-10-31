@@ -17,6 +17,7 @@ const constantan = 0xF5A280
 //Mekanism
 const osmium = 0x67869f
 const bronze = 0xD07C1B
+const uranium = 0x37A119
 //Create
 const zinc = 0x96b685
 const brass = 0xE9BA54
