@@ -15,4 +15,4 @@ This Repo holds a bunch of scripts related to generating a bunch of blocks and i
 
 * For the `server` scripts, there will be recipes for whatever is made. For example, theres a script that makes a bunch of datagenerated Tools, using a `for` loop. Make your recipes how you want. I will not provide recipes for everything, you can use the Tools script as a base.
 
-* I have provided some textures you may use. They are licenced under [**`CC BY-SA 4.0`**](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1).
+* I have provided some textures you may use. They are licenced under [**`CC BY-SA 4.0`**](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1). Some textures you will see defined (Tool textures) are originally from Minecraft, and I will not provide.
