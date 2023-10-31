@@ -6,7 +6,7 @@ I imagine you're tired of making a ton of blocks/items one at a time, making a b
 This Repo holds a bunch of scripts related to generating a bunch of blocks and items using `for` loops. No license for the scripts, use at your free will.
 
 * How to use:
-> There are two folders, `server` and `startup` Inside the `server` folder are scripts that __only work in the `server_scripts` folder in KubeJS__. Likewise for `startup`, those go in the `startup_scripts` folder.
+There are two folders, `server` and `startup` Inside the `server` folder are scripts that __only work in the `server_scripts` folder in KubeJS__. Likewise for `startup`, those go in the `startup_scripts` folder.
 
 * The `constants.js` file has colors defined for some materials. There you can add your own, modify or remove the existing materials.
 * In each `startup` datagen file, is a `var` used to get the colors of materials from `constants.js`. There is another `var` below with the names of the materials. **You will need to add a material to both `vars`, otherwise it will not work**.
