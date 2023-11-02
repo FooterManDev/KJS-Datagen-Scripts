@@ -3,7 +3,7 @@
     "description": "Quick Datagen scripts for KubeJS.",
     
     "versions": [9, 10],
-    "modloaders": [Forge, Fabric],
+    "modloaders": ["forge"],
     "dependencies": [],
     "incompatibilities": []
 }
