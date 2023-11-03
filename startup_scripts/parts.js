@@ -37,6 +37,7 @@ global.parts = [
   'constantan',
   'osmium',
   'bronze',
+  'uranium',
   'zinc',
   'brass',
   'enderium',
