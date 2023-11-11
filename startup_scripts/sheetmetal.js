@@ -27,7 +27,7 @@ StartupEvents.registry('block', event => {
   for (const mat of global.sheetmetal_mats) {
     event
       .create(`sheetmetal_${mat}`)
-      .displayName(`${mat} Sheetmetal`)
+      .displayName(`${mat.charAt(0).toUpperCase() + mat.slice(1)} Sheetmetal`)
       .textureAll('immersiveengineering:block/metal/sheetmetal_aluminum')
       .color(0, metal_properties[mat].color)
       .tagBoth('forge:sheetmetals')
