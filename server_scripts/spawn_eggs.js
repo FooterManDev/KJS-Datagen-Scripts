@@ -12,6 +12,14 @@ BlockEvents.rightClicked(event => {
         if (!player.isCreative()) {
             item.count--;
         }
-        player.server.runCommand(`/summon ${egg.mc_id} ${x} ${y + 1} ${z}`);
+
+        if(typeof egg.nbt == 'undefined') egg.nbt = {}
+        //player.server.runCommand(`/summon ${egg.mc_id} ${x} ${y + 1} ${z}`);
+                let entity = event.level.createEntity(egg.mc_id)
+                entity.x = x + 0.5 //#1 to fix wrong alignment on block.clicking
+                entity.y = y + 1
+                entity.z = z + 0.5 //#1
+                entity.mergeNbt(egg.nbt) //  <- require modify global.spawnableMobs to allow nbt
+                entity.spawn()
     }
 });
