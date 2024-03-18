@@ -7,7 +7,7 @@ This Repo holds a bunch of scripts related to generating a bunch of blocks and i
 
 #### How to use:
 
-* There are three folders: `startup_scripts`, `server_scripts` hold scripts. The `assets` folder has textures you may use **providing you follow the licence**. [**`CC BY-SA 4.0`**](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+* There are three folders: `startup_scripts`, `server_scripts` hold scripts. The `assets` folder has textures you may use **providing you follow the licences**.
 
 * The `constants.js` file has colors defined for some materials. There you can add your own, modify or remove the existing materials.
 * In each `startup` datagen file, is a `var` used to get the colors of materials from `constants.js`. There is another `var` below with the names of the materials. **You will need to add a material to both `vars`, otherwise it will not work**.
